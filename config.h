@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static char font[] = "Source Code Pro for Powerline:size=14:antialias=false:autohint=false";
+static char font[] = "Source Code Pro for Powerline:size=13:antialias=false:autohint=false";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
 static char *utmp = NULL;
