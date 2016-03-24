@@ -5,6 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+
 static char font[] = "Source Code Pro for Powerline:size=14:antialias=false:autohint=false";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
@@ -84,7 +85,9 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+	"#232a25",  /* Default cursor */
+        "#87928a",  /* Default foreground (fg)*/
+        "#171c19"  /* Default background (bg) (avoid flashing on load)*/
 };
 
 
@@ -92,8 +95,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-static unsigned int defaultfg = 7;
-static unsigned int defaultbg = 0;
+static unsigned int defaultfg = 257;
+static unsigned int defaultbg = 258;
 static unsigned int defaultcs = 256;
 
 /*
