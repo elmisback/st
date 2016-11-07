@@ -8,7 +8,7 @@
 
 static char font[] = "Monofur for Powerline:size=15:antialias=true:autohint=false";
 static int borderpx = 2;
-static char shell[] = "/bin/sh";
+static char shell[] = "/usr/bin/sh";
 static char *utmp = NULL;
 static char stty_args[] = "stty raw -echo -iexten echonl";
 
@@ -63,24 +63,52 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+        "#171c19",
+        "#b16139",
+        "#489963",
+        "#a07e3b",
+        "#478c90",
+        "#55859b",
+        "#1c9aa0",
+        "#87928a",
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+        /* 8 Bright colors */
+        "#5f6d64",
+        "#b16139",
+        "#489963",
+        "#a07e3b",
+        "#478c90",
+        "#55859b",
+        "#1c9aa0",
+        "#ecf4ee",
+
+        /* Extra colors bc 256 colorspace */
+        "#9f713c",
+        "#867469",
+        "#232a25",
+        "#526057",
+        "#78877d",
+        "#dfe7e2",
+
+	/* 8 normal colors */
+	//"black",
+	//"red3",
+	//"green3",
+	//"yellow3",
+	//"blue2",
+	//"magenta3",
+	//"cyan3",
+	//"gray90",
+
+	///* 8 bright colors */
+	//"gray50",
+	//"red",
+	//"green",
+	//"yellow",
+	//"#5c5cff",
+	//"magenta",
+	//"cyan",
+	//"white",
 
 	[255] = 0,
 
